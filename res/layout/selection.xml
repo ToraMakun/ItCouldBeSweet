@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="#333"
+            android:textSize="18sp" />    
+    <com.facebook.widget.ProfilePictureView
+            android:id="@+id/selection_profile_pic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            facebook:preset_size="small" />    
+   <Button
+        android:id="@+id/sugger_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMsg"
+        android:layout_centerHorizontal="true"
+        android:text="@string/suggerer_amis" 
+        style="@style/com_facebook_loginview_silver_style" />
+</LinearLayout>
+</LinearLayout>

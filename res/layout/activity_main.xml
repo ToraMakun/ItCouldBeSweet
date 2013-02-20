@@ -1,15 +1,21 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/com_facebook_usersettingsfragment_background_gradient" >
 
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+    <fragment android:name="com.example.itcouldbesweet.SelectionFragment"
+          android:id="@+id/selectionFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.example.itcouldbesweet.SplashFragment"
+          android:id="@+id/splashFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.facebook.widget.UserSettingsFragment"
+          android:id="@+id/userSettingsFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+</LinearLayout>
